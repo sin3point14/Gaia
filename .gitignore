@@ -32,3 +32,7 @@
 *.npy
 
 
+**/build
+outputs
+
+**/SimulationParameters**

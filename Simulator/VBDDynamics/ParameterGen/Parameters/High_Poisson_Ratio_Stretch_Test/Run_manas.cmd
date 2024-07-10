@@ -1,0 +1,2 @@
+C:\Users\manas\github-clones\Gaia\Simulator\VBDDynamics\build\RelWithDebInfo\VBDDynamics.exe C:\Users\manas\github-clones\Gaia\Simulator\VBDDynamics\ParameterGen\Parameters\High_Poisson_Ratio_Stretch_Test\.\Models.json C:\Users\manas\github-clones\Gaia\Simulator\VBDDynamics\ParameterGen\Parameters\High_Poisson_Ratio_Stretch_Test\.\Parameters.json C:\Users\manas\github-clones\Gaia\outputs\High_Poisson_Ratio_Stretch_Test\. -R C:\Users\manas\github-clones\Gaia
+cmd /k

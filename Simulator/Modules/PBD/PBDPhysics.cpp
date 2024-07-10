@@ -241,11 +241,11 @@ bool GAIA::PBDPhysics::initializeGPU()
 	pDCD->initialize(tMeshPtrsBase);
 	pCCD->initialize(tMeshPtrsBase);
 
-	if (physicsAllParams.collisionParams.allowVolumetricCollision)
-	{
-		pVolCD = std::make_shared<VolumetricCollisionDetector>(physicsAllParams.collisionParams.volCollisionParams);
-		pVolCD->initialize(tMeshPtrsBase);
-	}
+	//if (physicsAllParams.collisionParams.allowVolumetricCollision)
+	//{
+	//	pVolCD = std::make_shared<VolumetricCollisionDetector>(physicsAllParams.collisionParams.volCollisionParams);
+	//	pVolCD->initialize(tMeshPtrsBase);
+	//}
 
 	// initialize GPUS
 	cudaStreams.resize(tMeshes.size());
@@ -1744,9 +1744,9 @@ bool GAIA::PBDPhysicsAllParameters::fromJson(nlohmann::json& physicsJsonParams)
 {
 	physicsParams.fromJson(physicsJsonParams["PhysicsParams"]);
 	collisionParams.fromJson(physicsJsonParams["CollisionParams"]);
-	if (collisionParams.allowVolumetricCollision) {
-		collisionParams.volCollisionParams.fromJson(physicsJsonParams["VolCollisionParams"]);
-	}
+	//if (collisionParams.allowVolumetricCollision) {
+	//	collisionParams.volCollisionParams.fromJson(physicsJsonParams["VolCollisionParams"]);
+	//}
 	return true;
 }
 
@@ -1754,8 +1754,8 @@ bool GAIA::PBDPhysicsAllParameters::toJson(nlohmann::json& physicsJsonParams)
 {
 	physicsParams.toJson(physicsJsonParams["PhysicsParams"]);
 	collisionParams.toJson(physicsJsonParams["CollisionParams"]); 
-	if (collisionParams.allowVolumetricCollision) {
-		collisionParams.volCollisionParams.toJson(physicsJsonParams["VolCollisionParams"]);
-	}
+	//if (collisionParams.allowVolumetricCollision) {
+	//	collisionParams.volCollisionParams.toJson(physicsJsonParams["VolCollisionParams"]);
+	//}
 	return true;
 }

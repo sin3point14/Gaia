@@ -21,6 +21,13 @@ machines = {
             r"E:\Data2\VBDSimulation",
         ]
     },
+    "manas": {
+        "binaryFile": r"C:\Users\manas\github-clones\Gaia\Simulator\VBDDynamics\build\RelWithDebInfo\VBDDynamics.exe",
+        "RepoPath": str(pathlib.Path(__file__).parent.parent.parent.parent.resolve()),
+        "OutputDirs": [
+            r"C:\Users\manas\github-clones\Gaia\outputs",
+        ]
+    },
 }
 
 
